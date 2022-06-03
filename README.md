@@ -3,7 +3,7 @@
 This is a simple python3 script to run specific macros in excel macro-enabled workbooks.
 
 ## Use case:
-Automate the update of database export to excel trough OLEDB link: useful when you have to feed a MS DB to python but your enterprise security rules prevent direct link. The file can then be read with ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) for easy manipulation.
+Automate the update of database export to ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white) trough OLEDB link: useful when you have to feed a MS DB to ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) but your enterprise security rules prevent direct link. The file can then be read with ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) for easy manipulation.
 
 ## Description
 Based on win32com.client.
