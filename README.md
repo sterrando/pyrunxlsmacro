@@ -11,3 +11,16 @@ runMacro function is fed with filename and macro name.
 The xlsm file is open ```workbook = excel_macro.Workbooks.Open(Filename = excel_path, ReadOnly =1)```, the macro is run ```excel_macro.Application.Run(macropath)``` and then file is saved ```workbook.Save()``` (in case the macro makes some changes to the file itself) and closed ```excel_macro.Application.Quit()```.
 
 macropath is constructed as the concatenation of ```[excel filename].xlsm + '!' + [macro_name]```
+
+## Excel macro
+To run the query, we need to create a VBA macro. in this example it's called "update_db":
+
+```
+Sub update_db()
+'
+' update_db Macro
+'
+'
+    ActiveWorkbook.RefreshAll
+End Sub
+```
