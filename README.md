@@ -24,3 +24,4 @@ Sub update_db()
     ActiveWorkbook.RefreshAll
 End Sub
 ```
+![macro screenshot](Screenshot.jpg)
