@@ -8,4 +8,6 @@ Automate the update of database export to excel trough OLEDB link: useful when y
 ## Description
 Based on win32com.client.
 runMacro function is fed with filename and macro name. 
-The xlsm file is open, the macro is run and then file is saved (in case the macro makes some changes to the file itself) and closed
+The xlsm file is open ```workbook = excel_macro.Workbooks.Open(Filename = excel_path, ReadOnly =1)```, the macro is run ```excel_macro.Application.Run(macropath)``` and then file is saved ```workbook.Save()``` (in case the macro makes some changes to the file itself) and closed ```excel_macro.Application.Quit()```.
+
+macropath is constructed as the concatenation of ```[excel filename].xlsm + '!' + [macro_name]```
